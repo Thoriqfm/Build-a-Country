@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build a Country</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 
 <body class="bg-gray-100">
-
     <div class="container max-w-7xl mx-auto p-4 sm:p-8">
         <h1 class="text-3xl font-bold text-center text-gray-800 mb-10">
             Build a Country
         </h1>
         <div class="space-y-12">
+            <!-- Kelompok 1 -->
             <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
                 <h2 class="text-2xl font-semibold text-indigo-700 mb-5 border-b border-gray-200 pb-3">
                     Kelompok 1
@@ -27,12 +27,14 @@
                         <div id="track-g1-i-a"
                             class="diagram-track w-14 h-48 bg-gray-200 rounded-lg overflow-hidden relative cursor-pointer shadow-inner">
                             <div id="fill-g1-i-a"
-                                class="absolute bottom-0 left-0 w-full bg-indigo-600 transition-colors duration-150"
+                                class="absolute bottom-0 left-0 w-full bg-indigo-600 transition-all duration-300"
                                 style="height: 50%;"></div>
-                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>🌳</span>
+                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>😊</span>
                             </div>
                         </div>
                         <span id="val-g1-i-a" class="text-xl font-bold text-indigo-600">50</span>
+                        <input type="number" id="input-g1-i-a" min="0" max="100" value="50"
+                            class="w-16 px-2 py-1 text-center border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500">
                         <input type="range" id="g1-i-a" min="0" max="100" value="50" class="sr-only">
                     </div>
                     <div class="flex flex-col items-center space-y-2">
@@ -40,12 +42,14 @@
                         <div id="track-g1-i-b"
                             class="diagram-track w-14 h-48 bg-gray-200 rounded-lg overflow-hidden relative cursor-pointer shadow-inner">
                             <div id="fill-g1-i-b"
-                                class="absolute bottom-0 left-0 w-full bg-indigo-600 transition-colors duration-150"
+                                class="absolute bottom-0 left-0 w-full bg-indigo-600 transition-all duration-300"
                                 style="height: 50%;"></div>
-                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>👥</span>
+                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>🌳</span>
                             </div>
                         </div>
                         <span id="val-g1-i-b" class="text-xl font-bold text-indigo-600">50</span>
+                        <input type="number" id="input-g1-i-b" min="0" max="100" value="50"
+                            class="w-16 px-2 py-1 text-center border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500">
                         <input type="range" id="g1-i-b" min="0" max="100" value="50" class="sr-only">
                     </div>
                     <div class="flex flex-col items-center space-y-2">
@@ -53,12 +57,14 @@
                         <div id="track-g1-i-c"
                             class="diagram-track w-14 h-48 bg-gray-200 rounded-lg overflow-hidden relative cursor-pointer shadow-inner">
                             <div id="fill-g1-i-c"
-                                class="absolute bottom-0 left-0 w-full bg-indigo-600 transition-colors duration-150"
+                                class="absolute bottom-0 left-0 w-full bg-indigo-600 transition-all duration-300"
                                 style="height: 50%;"></div>
-                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>😊</span>
+                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>🪙</span>
                             </div>
                         </div>
                         <span id="val-g1-i-c" class="text-xl font-bold text-indigo-600">50</span>
+                        <input type="number" id="input-g1-i-c" min="0" max="100" value="50"
+                            class="w-16 px-2 py-1 text-center border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500">
                         <input type="range" id="g1-i-c" min="0" max="100" value="50" class="sr-only">
                     </div>
                     <div class="flex flex-col items-center space-y-2">
@@ -66,16 +72,20 @@
                         <div id="track-g1-i-d"
                             class="diagram-track w-14 h-48 bg-gray-200 rounded-lg overflow-hidden relative cursor-pointer shadow-inner">
                             <div id="fill-g1-i-d"
-                                class="absolute bottom-0 left-0 w-full bg-indigo-600 transition-colors duration-150"
+                                class="absolute bottom-0 left-0 w-full bg-indigo-600 transition-all duration-300"
                                 style="height: 50%;"></div>
-                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>🍄</span>
+                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>👥</span>
                             </div>
                         </div>
                         <span id="val-g1-i-d" class="text-xl font-bold text-indigo-600">50</span>
+                        <input type="number" id="input-g1-i-d" min="0" max="100" value="50"
+                            class="w-16 px-2 py-1 text-center border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500">
                         <input type="range" id="g1-i-d" min="0" max="100" value="50" class="sr-only">
                     </div>
                 </div>
             </div>
+
+            <!-- Kelompok 2 -->
             <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
                 <h2 class="text-2xl font-semibold text-teal-700 mb-5 border-b border-gray-200 pb-3">
                     Kelompok 2
@@ -86,12 +96,14 @@
                         <div id="track-g2-i-a"
                             class="diagram-track w-14 h-48 bg-gray-200 rounded-lg overflow-hidden relative cursor-pointer shadow-inner">
                             <div id="fill-g2-i-a"
-                                class="absolute bottom-0 left-0 w-full bg-teal-600 transition-colors duration-150"
+                                class="absolute bottom-0 left-0 w-full bg-teal-600 transition-all duration-300"
                                 style="height: 50%;"></div>
-                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>🌳</span>
+                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>😊</span>
                             </div>
                         </div>
                         <span id="val-g2-i-a" class="text-xl font-bold text-teal-600">50</span>
+                        <input type="number" id="input-g2-i-a" min="0" max="100" value="50"
+                            class="w-16 px-2 py-1 text-center border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-500">
                         <input type="range" id="g2-i-a" min="0" max="100" value="50" class="sr-only">
                     </div>
                     <div class="flex flex-col items-center space-y-2">
@@ -99,12 +111,14 @@
                         <div id="track-g2-i-b"
                             class="diagram-track w-14 h-48 bg-gray-200 rounded-lg overflow-hidden relative cursor-pointer shadow-inner">
                             <div id="fill-g2-i-b"
-                                class="absolute bottom-0 left-0 w-full bg-teal-600 transition-colors duration-150"
+                                class="absolute bottom-0 left-0 w-full bg-teal-600 transition-all duration-300"
                                 style="height: 50%;"></div>
-                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>👥</span>
+                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>🌳</span>
                             </div>
                         </div>
                         <span id="val-g2-i-b" class="text-xl font-bold text-teal-600">50</span>
+                        <input type="number" id="input-g2-i-b" min="0" max="100" value="50"
+                            class="w-16 px-2 py-1 text-center border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-500">
                         <input type="range" id="g2-i-b" min="0" max="100" value="50" class="sr-only">
                     </div>
                     <div class="flex flex-col items-center space-y-2">
@@ -112,12 +126,14 @@
                         <div id="track-g2-i-c"
                             class="diagram-track w-14 h-48 bg-gray-200 rounded-lg overflow-hidden relative cursor-pointer shadow-inner">
                             <div id="fill-g2-i-c"
-                                class="absolute bottom-0 left-0 w-full bg-teal-600 transition-colors duration-150"
+                                class="absolute bottom-0 left-0 w-full bg-teal-600 transition-all duration-300"
                                 style="height: 50%;"></div>
-                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>😊</span>
+                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>🪙</span>
                             </div>
                         </div>
                         <span id="val-g2-i-c" class="text-xl font-bold text-teal-600">50</span>
+                        <input type="number" id="input-g2-i-c" min="0" max="100" value="50"
+                            class="w-16 px-2 py-1 text-center border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-500">
                         <input type="range" id="g2-i-c" min="0" max="100" value="50" class="sr-only">
                     </div>
                     <div class="flex flex-col items-center space-y-2">
@@ -125,16 +141,20 @@
                         <div id="track-g2-i-d"
                             class="diagram-track w-14 h-48 bg-gray-200 rounded-lg overflow-hidden relative cursor-pointer shadow-inner">
                             <div id="fill-g2-i-d"
-                                class="absolute bottom-0 left-0 w-full bg-teal-600 transition-colors duration-150"
+                                class="absolute bottom-0 left-0 w-full bg-teal-600 transition-all duration-300"
                                 style="height: 50%;"></div>
-                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>🍄</span>
+                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>👥</span>
                             </div>
                         </div>
                         <span id="val-g2-i-d" class="text-xl font-bold text-teal-600">50</span>
+                        <input type="number" id="input-g2-i-d" min="0" max="100" value="50"
+                            class="w-16 px-2 py-1 text-center border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-500">
                         <input type="range" id="g2-i-d" min="0" max="100" value="50" class="sr-only">
                     </div>
                 </div>
             </div>
+
+            <!-- Kelompok 3 -->
             <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
                 <h2 class="text-2xl font-semibold text-rose-700 mb-5 border-b border-gray-200 pb-3">
                     Kelompok 3
@@ -145,12 +165,14 @@
                         <div id="track-g3-i-a"
                             class="diagram-track w-14 h-48 bg-gray-200 rounded-lg overflow-hidden relative cursor-pointer shadow-inner">
                             <div id="fill-g3-i-a"
-                                class="absolute bottom-0 left-0 w-full bg-rose-600 transition-colors duration-150"
+                                class="absolute bottom-0 left-0 w-full bg-rose-600 transition-all duration-300"
                                 style="height: 50%;"></div>
-                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>🌳</span>
+                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>😊</span>
                             </div>
                         </div>
                         <span id="val-g3-i-a" class="text-xl font-bold text-rose-600">50</span>
+                        <input type="number" id="input-g3-i-a" min="0" max="100" value="50"
+                            class="w-16 px-2 py-1 text-center border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-rose-500">
                         <input type="range" id="g3-i-a" min="0" max="100" value="50" class="sr-only">
                     </div>
                     <div class="flex flex-col items-center space-y-2">
@@ -158,12 +180,14 @@
                         <div id="track-g3-i-b"
                             class="diagram-track w-14 h-48 bg-gray-200 rounded-lg overflow-hidden relative cursor-pointer shadow-inner">
                             <div id="fill-g3-i-b"
-                                class="absolute bottom-0 left-0 w-full bg-rose-600 transition-colors duration-150"
+                                class="absolute bottom-0 left-0 w-full bg-rose-600 transition-all duration-300"
                                 style="height: 50%;"></div>
-                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>👥</span>
+                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>🌳</span>
                             </div>
                         </div>
                         <span id="val-g3-i-b" class="text-xl font-bold text-rose-600">50</span>
+                        <input type="number" id="input-g3-i-b" min="0" max="100" value="50"
+                            class="w-16 px-2 py-1 text-center border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-rose-500">
                         <input type="range" id="g3-i-b" min="0" max="100" value="50" class="sr-only">
                     </div>
                     <div class="flex flex-col items-center space-y-2">
@@ -171,12 +195,14 @@
                         <div id="track-g3-i-c"
                             class="diagram-track w-14 h-48 bg-gray-200 rounded-lg overflow-hidden relative cursor-pointer shadow-inner">
                             <div id="fill-g3-i-c"
-                                class="absolute bottom-0 left-0 w-full bg-rose-600 transition-colors duration-150"
+                                class="absolute bottom-0 left-0 w-full bg-rose-600 transition-all duration-300"
                                 style="height: 50%;"></div>
-                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>😊</span>
+                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>🪙</span>
                             </div>
                         </div>
                         <span id="val-g3-i-c" class="text-xl font-bold text-rose-600">50</span>
+                        <input type="number" id="input-g3-i-c" min="0" max="100" value="50"
+                            class="w-16 px-2 py-1 text-center border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-rose-500">
                         <input type="range" id="g3-i-c" min="0" max="100" value="50" class="sr-only">
                     </div>
                     <div class="flex flex-col items-center space-y-2">
@@ -184,12 +210,14 @@
                         <div id="track-g3-i-d"
                             class="diagram-track w-14 h-48 bg-gray-200 rounded-lg overflow-hidden relative cursor-pointer shadow-inner">
                             <div id="fill-g3-i-d"
-                                class="absolute bottom-0 left-0 w-full bg-rose-600 transition-colors duration-150"
+                                class="absolute bottom-0 left-0 w-full bg-rose-600 transition-all duration-300"
                                 style="height: 50%;"></div>
-                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>🍄</span>
+                            <div class="absolute bottom-2 left-0 w-full text-center text-3xl opacity-80"><span>👥</span>
                             </div>
                         </div>
                         <span id="val-g3-i-d" class="text-xl font-bold text-rose-600">50</span>
+                        <input type="number" id="input-g3-i-d" min="0" max="100" value="50"
+                            class="w-16 px-2 py-1 text-center border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-rose-500">
                         <input type="range" id="g3-i-d" min="0" max="100" value="50" class="sr-only">
                     </div>
                 </div>
