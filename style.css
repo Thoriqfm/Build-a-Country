@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.diagram-track {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+/* Hover effect untuk track diagram */
+.diagram-track:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Active state saat diagram di-klik */
+.diagram-track:active {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Tambahan styling untuk input agar lebih menonjol */
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* Animasi transisi untuk semua perubahan */
+* {
+    transition-timing-function: ease-in-out;
+}
+
+/* Animasi smooth untuk diagram fill */
+.diagram-track>div[id^="fill-"] {
+    transition: height 0.3s ease-in-out;
+}
+
+/* Styling untuk input number field */
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+/* Membuat spinner lebih terlihat di Chrome/Safari/Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+    height: 30px;
+}
+
+/* Styling untuk input number di Firefox */
+input[type="number"] {
+    -moz-appearance: number-input;
+}
+
+/* Hover effect untuk input field */
+input[type="number"]:hover {
+    border-color: #9ca3af;
+}
+
+/* Styling untuk container utama - responsif */
+@media (max-width: 640px) {
+    .container {
+        padding: 1rem;
+    }
+}
