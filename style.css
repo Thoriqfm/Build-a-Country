@@ -1,18 +1,64 @@
-/* Menggunakan font Inter yang modern */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body {
     font-family: 'Inter', sans-serif;
 }
 
-/* Styling untuk trek diagram kustom 
-  - user-select: none; mencegah teks terblok saat disentuh/diseret
-*/
 .diagram-track {
     -webkit-user-select: none;
-    /* Safari */
     -ms-user-select: none;
-    /* IE 10+ */
     user-select: none;
-    /* Standar */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+.diagram-track:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.diagram-track:active {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+* {
+    transition-timing-function: ease-in-out;
+}
+
+.diagram-track>div[id^="fill-"] {
+    transition: height 0.3s ease-in-out;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+    height: 30px;
+}
+
+input[type="number"] {
+    -moz-appearance: number-input;
+}
+
+
+input[type="number"]:hover {
+    border-color: #9ca3af;
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 1rem;
+    }
 }
